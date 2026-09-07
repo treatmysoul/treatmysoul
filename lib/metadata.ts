@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 
 const SITE_NAME = "TreatMySoul";
 const SITE_URL = "https://www.treatmysoul.com";
+const HOME_TITLE = "TreatMySoul | Wellness Retreats, Yoga, Meditation & Ayurveda";
+const DEFAULT_DESCRIPTION =
+  "Discover thoughtfully researched yoga, meditation, Ayurveda and wellness retreats. Compare experiences and find a retreat that feels right for you.";
 
 export function siteTitle(section?: string) {
   if (!section) {
-    return "TreatMySoul | Wellness Retreats, Yoga, Meditation & Ayurveda";
+    return HOME_TITLE;
   }
 
-  return `${section} | ${SITE_NAME}`;
+  return section;
 }
 
 export function createPageMetadata({
@@ -20,6 +23,8 @@ export function createPageMetadata({
   description: string;
   path: string;
 }): Metadata {
+  const socialTitle = title === HOME_TITLE ? title : `${title} | ${SITE_NAME}`;
+
   return {
     title,
     description,
@@ -27,7 +32,7 @@ export function createPageMetadata({
       canonical: path,
     },
     openGraph: {
-      title,
+      title: socialTitle,
       description,
       url: path,
       siteName: SITE_NAME,
@@ -35,7 +40,7 @@ export function createPageMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: socialTitle,
       description,
     },
   };
@@ -43,6 +48,11 @@ export function createPageMetadata({
 
 export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  title: {
+    default: HOME_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,

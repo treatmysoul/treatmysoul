@@ -90,7 +90,7 @@ function DesktopNavItem({
 
       <div
         id={menuId}
-        className={`surface-panel absolute left-0 top-full z-40 mt-4 w-[22rem] rounded-[1.5rem] p-3 ${
+        className={`menu-panel absolute left-0 top-full z-[80] mt-4 w-[22rem] rounded-[1.5rem] p-3 ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -155,7 +155,7 @@ function MobileNavItem({
   const menuId = `${item.label.toLowerCase().replace(/\s+/g, "-")}-mobile-menu`;
 
   return (
-    <div className="rounded-[1rem] border border-[var(--line)] bg-[rgba(255,255,255,0.58)]">
+    <div className="rounded-[1rem] border border-[var(--line)] bg-[#F8F4EA]">
       <button
         type="button"
         className="flex w-full items-center justify-between gap-3 rounded-[1rem] px-4 py-4 text-left text-base font-medium text-[var(--foreground)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--deep-green)]"
@@ -225,7 +225,7 @@ export function SiteHeader() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(246,241,232,0.82)] backdrop-blur-xl">
+    <header className="sticky top-0 z-[70] border-b border-[var(--line)] bg-[rgba(246,241,232,0.82)] backdrop-blur-xl">
       <div className="page-shell flex items-center justify-between gap-6 py-4">
         <Link href="/" className="shrink-0">
           <span className="display-font text-3xl tracking-[-0.05em] text-[var(--deep-green)]">
@@ -270,7 +270,7 @@ export function SiteHeader() {
 
           <div
             id="mobile-primary-menu"
-            className={`surface-panel absolute right-0 top-full mt-3 w-[min(24rem,calc(100vw-3rem))] rounded-[1.5rem] p-3 ${
+            className={`menu-panel absolute right-0 top-full z-[80] mt-3 w-[min(24rem,calc(100vw-3rem))] rounded-[1.5rem] p-3 ${
               mobileMenuOpen ? "block" : "hidden"
             }`}
           >

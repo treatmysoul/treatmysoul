@@ -21,6 +21,12 @@ type RetreatCategory = {
   featured: boolean;
 };
 
+type SocialLink = {
+  name: "Instagram" | "Facebook" | "X";
+  href: string;
+  ariaLabel: string;
+};
+
 type GuidePage = {
   slug: string;
   title: string;
@@ -472,10 +478,22 @@ export const footerLegal = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const socialLinks = [
-  { label: "Instagram" },
-  { label: "Facebook" },
-  { label: "X/Twitter" },
+export const socialLinks: SocialLink[] = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/treatmysoulgo",
+    ariaLabel: "TreatMySoul on Instagram",
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/people/Treatmysoul/61594019374496",
+    ariaLabel: "TreatMySoul on Facebook",
+  },
+  {
+    name: "X",
+    href: "https://x.com/treatmysoulgo",
+    ariaLabel: "TreatMySoul on X",
+  },
 ];
 
 export function getRetreatCategoryBySlug(slug: string) {

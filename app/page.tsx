@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HomeHeroVisual } from "@/components/home-hero-visual";
 import { RetreatCategoryCard } from "@/components/retreat-category-card";
 import { SectionHeading } from "@/components/section-heading";
-import { createPageMetadata, siteTitle } from "@/lib/metadata";
+import { siteTitle } from "@/lib/metadata";
 import {
   featuredDestination,
   guidePages,
@@ -10,12 +11,30 @@ import {
   valuePoints,
 } from "@/lib/site-data";
 
-export const metadata = createPageMetadata({
-  title: siteTitle(),
-  description:
-    "Discover thoughtfully researched yoga, meditation, Ayurveda and wellness retreats, starting with India. Compare options and find a retreat that fits you.",
-  path: "/",
-});
+const homeDescription =
+  "Discover thoughtfully researched yoga, meditation, Ayurveda and wellness retreats. Compare experiences and find a retreat that feels right for you.";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: siteTitle(),
+  },
+  description: homeDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: siteTitle(),
+    description: homeDescription,
+    url: "/",
+    siteName: "TreatMySoul",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle(),
+    description: homeDescription,
+  },
+};
 
 export default function Home() {
   const latestGuides = guidePages.slice(0, 3);
