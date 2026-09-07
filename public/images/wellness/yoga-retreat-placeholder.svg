@@ -1,0 +1,31 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="yogaSky" x1="480" y1="0" x2="480" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E6"/>
+      <stop offset="0.42" stop-color="#D9DED5"/>
+      <stop offset="1" stop-color="#61776B"/>
+    </linearGradient>
+    <linearGradient id="yogaMountains" x1="480" y1="360" x2="480" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7B3A7"/>
+      <stop offset="1" stop-color="#3B5348"/>
+    </linearGradient>
+    <linearGradient id="yogaDeck" x1="480" y1="730" x2="480" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6C3A1"/>
+      <stop offset="1" stop-color="#8E7251"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#yogaSky)"/>
+  <circle cx="728" cy="172" r="108" fill="#F7E5C3" fill-opacity="0.9"/>
+  <path d="M0 506L88 454L194 488L316 378L460 520L624 336L770 474L864 424L960 500V1200H0V506Z" fill="url(#yogaMountains)"/>
+  <path d="M0 660C114 622 248 622 386 670C512 716 612 768 736 780C812 788 886 780 960 754V1200H0V660Z" fill="#284136" fill-opacity="0.28"/>
+  <path d="M0 756H960V1200H0V756Z" fill="url(#yogaDeck)"/>
+  <path d="M0 820H960" stroke="#F7EEDD" stroke-opacity="0.45" stroke-width="8"/>
+  <path d="M84 876H882" stroke="#F7EEDD" stroke-opacity="0.18" stroke-width="6"/>
+  <ellipse cx="486" cy="694" rx="66" ry="20" fill="#E8D7B9" fill-opacity="0.72"/>
+  <circle cx="486" cy="628" r="32" fill="#F1E6D0"/>
+  <path d="M446 686C456 644 474 632 486 632C498 632 516 644 526 686" stroke="#F1E6D0" stroke-width="30" stroke-linecap="round"/>
+  <path d="M402 776C430 724 458 694 486 694C514 694 542 724 570 776" stroke="#F1E6D0" stroke-width="24" stroke-linecap="round"/>
+  <rect x="364" y="782" width="244" height="18" rx="9" fill="#EEE0C7"/>
+  <path d="M162 260C188 216 242 180 286 202C338 228 364 266 414 278" stroke="#728777" stroke-width="12" stroke-linecap="round"/>
+  <path d="M728 262C768 222 826 218 868 240" stroke="#728777" stroke-width="10" stroke-linecap="round"/>
+</svg>

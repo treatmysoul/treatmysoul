@@ -1,0 +1,71 @@
+<svg width="1600" height="1180" viewBox="0 0 1600 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="40" x2="800" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E6"/>
+      <stop offset="0.38" stop-color="#D8DDD3"/>
+      <stop offset="0.72" stop-color="#A8B5A7"/>
+      <stop offset="1" stop-color="#486558"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="1190" y1="120" x2="1190" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6E4C0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F6E4C0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ridgeBack" x1="800" y1="320" x2="800" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9C4B6"/>
+      <stop offset="1" stop-color="#6A8074"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="800" y1="430" x2="800" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EA091"/>
+      <stop offset="1" stop-color="#415A4E"/>
+    </linearGradient>
+    <linearGradient id="ridgeFront" x1="800" y1="580" x2="800" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60796D"/>
+      <stop offset="1" stop-color="#223A31"/>
+    </linearGradient>
+    <linearGradient id="river" x1="945" y1="650" x2="825" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E7CF"/>
+      <stop offset="0.36" stop-color="#D2D7CD"/>
+      <stop offset="1" stop-color="#7C968A"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="800" y1="520" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F2" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FFF9F2" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurSoft" x="-80" y="-80" width="1760" height="1340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1180" fill="url(#sky)"/>
+  <circle cx="1190" cy="220" r="205" fill="url(#sunGlow)"/>
+
+  <g opacity="0.8" filter="url(#blurSoft)">
+    <ellipse cx="424" cy="280" rx="180" ry="78" fill="#F3E5C9"/>
+    <ellipse cx="1270" cy="430" rx="210" ry="88" fill="#F6EFE1"/>
+  </g>
+
+  <path d="M0 520L116 448L198 470L306 356L408 438L536 286L668 432L802 248L952 426L1124 280L1260 430L1402 350L1600 496V1180H0V520Z" fill="url(#ridgeBack)"/>
+  <path d="M0 664L148 562L286 612L418 484L532 584L680 408L830 608L1000 454L1180 642L1324 520L1470 590L1600 548V1180H0V664Z" fill="url(#ridgeMid)"/>
+  <path d="M0 808L150 728L318 802L474 662L620 752L780 610L934 836L1120 676L1300 792L1450 710L1600 790V1180H0V808Z" fill="url(#ridgeFront)"/>
+
+  <path d="M1048 642C959 684 891 752 857 846C824 939 776 1047 676 1180H1058C1126 1089 1140 1001 1171 907C1203 811 1275 724 1370 656L1048 642Z" fill="url(#river)"/>
+  <path d="M989 654C925 705 876 775 850 856C824 937 792 1029 723 1138" stroke="#FCF7EF" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+
+  <path d="M0 744C164 692 314 698 456 732C592 765 721 822 826 840C974 866 1126 829 1256 762C1372 702 1490 671 1600 689V1180H0V744Z" fill="#2A4338" opacity="0.18"/>
+  <path d="M0 790C140 756 270 765 404 820C552 882 664 952 800 965C946 979 1085 909 1225 850C1343 801 1462 788 1600 814V1180H0V790Z" fill="#1D342B" opacity="0.24"/>
+
+  <path d="M1098 868L1170 822L1218 858L1266 792L1340 854L1388 808L1464 892V1082H1098V868Z" fill="#20342B" opacity="0.92"/>
+  <path d="M1152 878H1394V952H1152V878Z" fill="#E7D9BC" opacity="0.24"/>
+  <path d="M1180 822L1220 792L1266 822H1180Z" fill="#E4D2AE" opacity="0.22"/>
+  <path d="M1328 808L1360 780L1404 808H1328Z" fill="#E4D2AE" opacity="0.18"/>
+
+  <g opacity="0.72">
+    <path d="M153 946L185 860L217 946H153Z" fill="#21362D"/>
+    <path d="M202 962L238 858L274 962H202Z" fill="#1D3028"/>
+    <path d="M262 948L291 874L320 948H262Z" fill="#243A30"/>
+    <path d="M1330 996L1368 890L1406 996H1330Z" fill="#21362D"/>
+    <path d="M1394 982L1428 894L1462 982H1394Z" fill="#1D3028"/>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="1180" fill="url(#mist)"/>
+</svg>

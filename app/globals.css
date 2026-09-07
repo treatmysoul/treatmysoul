@@ -1,26 +1,111 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f1e8;
+  --background-strong: #fcf8f1;
+  --foreground: #1d2924;
+  --muted: #5a655f;
+  --line: rgba(29, 41, 36, 0.12);
+  --line-strong: rgba(29, 41, 36, 0.2);
+  --surface: rgba(255, 250, 243, 0.76);
+  --deep-green: #1f3b33;
+  --sand: #d6bb95;
+  --shadow: 0 24px 60px rgba(29, 41, 36, 0.08);
+  --font-sans:
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(214, 187, 149, 0.15), transparent 34%),
+    linear-gradient(180deg, #fbf6ee 0%, #f6f1e8 36%, #f4eee3 100%);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at top right, rgba(134, 154, 136, 0.14), transparent 28%),
+    linear-gradient(180deg, #fbf6ee 0%, #f6f1e8 36%, #f4eee3 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(31, 59, 51, 0.16);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.page-shell {
+  width: min(100%, 80rem);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.display-font {
+  font-family: var(--font-display);
+}
+
+.surface-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.soft-card {
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.92), rgba(247, 242, 233, 0.86));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.section-kicker {
+  color: var(--deep-green);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.balanced-copy {
+  text-wrap: pretty;
+}
+
+.nav-chevron {
+  transition: transform 160ms ease;
+}
+
+details[open] > summary .nav-chevron {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .page-shell {
+    padding-inline: 2rem;
+  }
 }

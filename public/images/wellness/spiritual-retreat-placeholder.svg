@@ -1,0 +1,30 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spiritSky" x1="480" y1="0" x2="480" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F2E7"/>
+      <stop offset="0.4" stop-color="#D9DDD2"/>
+      <stop offset="1" stop-color="#576D60"/>
+    </linearGradient>
+    <linearGradient id="spiritHillBack" x1="480" y1="350" x2="480" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A2AE9F"/>
+      <stop offset="1" stop-color="#476154"/>
+    </linearGradient>
+    <linearGradient id="spiritHillFront" x1="480" y1="560" x2="480" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D846F"/>
+      <stop offset="1" stop-color="#294237"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#spiritSky)"/>
+  <circle cx="258" cy="178" r="116" fill="#F5E0BA" fill-opacity="0.92"/>
+  <path d="M0 522L96 448L190 474L312 378L456 502L616 330L776 498L862 454L960 530V1200H0V522Z" fill="url(#spiritHillBack)"/>
+  <path d="M0 688C118 612 262 594 398 634C528 672 630 742 750 768C826 784 896 782 960 756V1200H0V688Z" fill="url(#spiritHillFront)"/>
+  <path d="M658 560L728 512L790 574L812 470L886 532L896 434" stroke="#6D816E" stroke-width="9" stroke-linecap="round"/>
+  <path d="M152 1200C244 1126 334 1032 414 904C462 828 520 754 602 682C678 616 784 576 936 556V1200H152Z" fill="#E4D4B8"/>
+  <path d="M258 1200C336 1118 412 1036 484 930C554 830 632 748 750 666C798 632 854 602 930 568" stroke="#F5ECD8" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="580" cy="744" rx="30" ry="16" fill="#243A31" fill-opacity="0.25"/>
+  <circle cx="580" cy="694" r="18" fill="#F3E8D2"/>
+  <path d="M580 716V778" stroke="#F3E8D2" stroke-width="18" stroke-linecap="round"/>
+  <path d="M558 754L536 804" stroke="#F3E8D2" stroke-width="14" stroke-linecap="round"/>
+  <path d="M602 754L624 804" stroke="#F3E8D2" stroke-width="14" stroke-linecap="round"/>
+  <path d="M534 1160C596 1074 654 998 706 912" stroke="#CAB594" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 18"/>
+</svg>
